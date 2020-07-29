@@ -1,0 +1,38 @@
+<div id="main">
+  <table id="registrationTable">
+    <tr>
+      <td><h2>Registration Form</h2></td>
+    </tr>
+    <tr>      
+      <td><input type="text" placeholder="Username" id="txtUsername"></td>
+    </tr>
+    <tr>      
+      <td><input type="text" placeholder="Email" id="txtEmail"></td>
+    </tr>
+    <tr>      
+      <td><input type="password" placeholder="Password" id="txtPassword"></td>
+    </tr>
+    <tr>      
+      <span id="info">Hata</span>
+      
+      <td>
+        <button id="btnRegister">Register</button>
+        <button id="btnLogin">Login</button>          
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCCu0apenQmQ_PUhVsz6U7fa0gaikHmH7o",
+    authDomain: "insertupdatedelete-559db.firebaseapp.com",
+    databaseURL: "https://insertupdatedelete-559db.firebaseio.com",
+    projectId: "insertupdatedelete-559db",
+    storageBucket: "insertupdatedelete-559db.appspot.com",
+    messagingSenderId: "951251986964"
+  };
+  firebase.initializeApp(config);
+</script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kipstudios</title>
+  <link rel='stylesheet' href='https://code.getmdl.io/1.3.0/material.indigo-pink.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="main">
+  <table id="registrationTable">
+    <tr>
+      <td><h2>Login</h2></td>
+    </tr>
+    <tr>      
+      <td><input type="text" placeholder="Username" id="txtUsername"></td>
+    </tr>
+    <tr>      
+      <td><input type="text" placeholder="Email" id="txtEmail"></td>
+    </tr>
+    <tr>      
+      <td><input type="password" placeholder="Password" id="txtPassword"></td>
+    </tr>
+    <tr>      
+      <span id="info" >Hata</span>
+      
+      <td>
+        <button id="btnRegister">Register</button>
+        <button id="btnLogin">Login</button>          
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- Logged In -->
+<div id="user_div">
+	
+    <div id="welcome-text" >Welcome to Kipstudios! You're currently logged-in!</div>
+	
+	<div id="username-container">
+		<p id="user_para" class="username-text">Username</p>
+		<button id="logoutbtn" onclick="logout()">Logout</button>
+	</div>
+	
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCwcvXzmPS3_5jquN1vOyqWNAreeceXs2A",
+    authDomain: "login-database-e91d5.firebaseapp.com",
+    databaseURL: "https://login-database-e91d5.firebaseio.com",
+    projectId: "login-database-e91d5",
+    storageBucket: "login-database-e91d5.appspot.com",
+    messagingSenderId: "875324345971",
+    appId: "1:875324345971:web:1540ccb3bdb6a1ca9a6406",
+    measurementId: "G-VPWESSWMPL"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- partial -->
+  <script src='https://code.getmdl.io/1.3.0/material.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

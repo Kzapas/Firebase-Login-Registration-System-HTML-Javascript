@@ -1,0 +1,137 @@
+body{
+  margin:0;
+  padding:0;
+  outline:none;
+  font:12px Nunito;
+  font-weight:bold;
+  font-family: 'Nunito';
+  user-select:none;
+  background-color: #F5F7F9;
+}
+#main{
+  width:500px;
+  margin:auto;
+  border:1px solid #eee;
+  margin-top:100px;
+  font-family: 'Nunito';
+  position:relative;
+  border-radius:4px;
+  box-shadow: 0 0 3px #eee;
+  background-color: white;
+}
+table{
+  margin:auto;
+  font-family: 'Nunito';
+}
+
+
+td{
+  padding:10px;
+  font-family: 'Nunito';
+}
+input[type="text"], input[type="password"]{
+  padding:10px;
+  border-radius:3px;
+  border:none;
+  border:1px solid #eee;
+  width:405px;
+  outline:none;
+  font-family: 'Nunito';
+}
+button{
+  padding:10px;
+  border:none;
+  border-radius:4px;
+  background:#2D8CF0;
+  color:#fff;
+  outline:none;
+  float:right;
+  cursor:pointer;
+  font-family: 'Nunito';
+  margin-left:15px;
+}
+h2{
+  font-family: 'Nunito';
+  color:#666;
+}
+
+#welcome-text {
+	font-family: 'Nunito';
+	border-radius: 20px; /* Making border radius */
+	height:auto;
+	width:20%;
+    padding: 6px 10px 6px 10px; /* Making space around letters */
+    font-size: 13px; /* Changing font size */
+	background-color: white;
+	text-align: center;
+	color:#2D8CF0;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	animation-name: notification;
+	animation-duration: 4s;
+	top: -40px;
+	display:block;
+	box-shadow: 0 3px 20px #ddd;
+}
+
+#logoutbtn{
+	display: inline-block;
+	float: middle;
+	
+}
+
+@keyframes notification {
+  0%   { top:-40px;}
+  25%  { top:60px;}
+  50%  { top:60px;}
+  75%  { top:60px;}
+  100% { top:-40px;}
+}
+
+.username-text {
+	color: #2D8CF0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	width: 150px;
+	padding-top: 7px;
+}
+
+#username-container{
+	width: auto;
+	overflow: hidden;
+	text-align: middle;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+
+#info{
+  padding:10px;
+  border-radius:3px;
+  position:absolute;
+  top:310px;
+  left:27px;
+  color:#069;
+  display:none;
+  font-size:11px;
+}
+#btnRegister{
+  background:#2ecc71;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*
+#btnLogin{
+  background:#34495e;
+}
+#loginTable{
+  display:none;
+}
+*/
